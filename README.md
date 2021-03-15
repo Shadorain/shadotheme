@@ -65,7 +65,6 @@ let g:lightline = { 'colorscheme': 'deus' }
 To install my terminal colorscheme it is up to your terminal honestly.
 Here is the colorpallate:
 
-```
 black       ![#140a1d](https://via.placeholder.com/15/140a1d/000000?text=+) `#140a1d`
 red         ![#B52A5B](https://via.placeholder.com/15/B52A5B/000000?text=+) `#B52A5B`
 green       ![#FF4971](https://via.placeholder.com/15/FF4971/000000?text=+) `#FF4971`
@@ -85,7 +84,6 @@ white       ![#f1c4e0](https://via.placeholder.com/15/f1c4e0/000000?text=+) `#f1
 background  ![#09090d](https://via.placeholder.com/15/09090d/000000?text=+) `#09090d`
 foreground  ![#e3c7fc](https://via.placeholder.com/15/e3c7fc/000000?text=+) `#e3c7fc`
 cursor      ![#f1c4e0](https://via.placeholder.com/15/f1c4e0/000000?text=+) `#f1c4e0`
-```
 
 #### Shell
 
