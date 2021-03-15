@@ -4,7 +4,7 @@ My ultimate purple and pink dark cherryblossom theme!
 For all my screenshots and everything I use Source Code Pro as my font.
 
 * [Installation](#Installation)
-  * [Vim/Nvim](#Vim / Nvim)
+  * [Vim/Nvim](#Vim--Nvim)
   * [Terminal](#Terminal)
     * [Shell](#Shell)
     * [ST](#ST)
