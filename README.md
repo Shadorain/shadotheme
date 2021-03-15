@@ -66,25 +66,25 @@ To install my terminal colorscheme it is up to your terminal honestly.
 Here is the colorpallate:
 
 ```
-black       #140a1d ![#140a1d](https://via.placeholder.com/15/140a1d/000000?text=+)
-red         #B52A5B ![#B52A5B](https://via.placeholder.com/15/B52A5B/000000?text=+)
-green       #FF4971 ![#FF4971](https://via.placeholder.com/15/FF4971/000000?text=+)
-yellow      #8897F4 ![#8897F4](https://via.placeholder.com/15/8897F4/000000?text=+)
-blue        #bd93f9 ![#bd93f9](https://via.placeholder.com/15/bd93f9/000000?text=+)
-magenta     #E9729D ![#E9729D](https://via.placeholder.com/15/E9729D/000000?text=+)
-cyan        #F18FB0 ![#F18FB0](https://via.placeholder.com/15/F18FB0/000000?text=+)
-white       #f1c4e0 ![#f1c4e0](https://via.placeholder.com/15/f1c4e0/000000?text=+)
-black       #a8899c ![#a8899c](https://via.placeholder.com/15/a8899c/000000?text=+)
-red         #B52A5B ![#B52A5B](https://via.placeholder.com/15/B52A5B/000000?text=+)
-green       #FF4971 ![#FF4971](https://via.placeholder.com/15/FF4971/000000?text=+)
-yellow      #8897F4 ![#8897F4](https://via.placeholder.com/15/8897F4/000000?text=+)
-blue        #bd93f9 ![#bd93f9](https://via.placeholder.com/15/bd93f9/000000?text=+)
-magenta     #E9729D ![#E9729D](https://via.placeholder.com/15/E9729D/000000?text=+)
-cyan        #F18FB0 ![#F18FB0](https://via.placeholder.com/15/F18FB0/000000?text=+)
-white       #f1c4e0 ![#f1c4e0](https://via.placeholder.com/15/f1c4e0/000000?text=+)
-background  #09090d ![#09090d](https://via.placeholder.com/15/09090d/000000?text=+)
-foreground  #e3c7fc ![#e3c7fc](https://via.placeholder.com/15/e3c7fc/000000?text=+)
-cursor      #f1c4e0 ![#f1c4e0](https://via.placeholder.com/15/f1c4e0/000000?text=+)
+black       ![#140a1d](https://via.placeholder.com/15/140a1d/000000?text=+) `#140a1d`
+red         ![#B52A5B](https://via.placeholder.com/15/B52A5B/000000?text=+) `#B52A5B`
+green       ![#FF4971](https://via.placeholder.com/15/FF4971/000000?text=+) `#FF4971`
+yellow      ![#8897F4](https://via.placeholder.com/15/8897F4/000000?text=+) `#8897F4`
+blue        ![#bd93f9](https://via.placeholder.com/15/bd93f9/000000?text=+) `#bd93f9`
+magenta     ![#E9729D](https://via.placeholder.com/15/E9729D/000000?text=+) `#E9729D`
+cyan        ![#F18FB0](https://via.placeholder.com/15/F18FB0/000000?text=+) `#F18FB0`
+white       ![#f1c4e0](https://via.placeholder.com/15/f1c4e0/000000?text=+) `#f1c4e0`
+black       ![#a8899c](https://via.placeholder.com/15/a8899c/000000?text=+) `#a8899c`
+red         ![#B52A5B](https://via.placeholder.com/15/B52A5B/000000?text=+) `#B52A5B`
+green       ![#FF4971](https://via.placeholder.com/15/FF4971/000000?text=+) `#FF4971`
+yellow      ![#8897F4](https://via.placeholder.com/15/8897F4/000000?text=+) `#8897F4`
+blue        ![#bd93f9](https://via.placeholder.com/15/bd93f9/000000?text=+) `#bd93f9`
+magenta     ![#E9729D](https://via.placeholder.com/15/E9729D/000000?text=+) `#E9729D`
+cyan        ![#F18FB0](https://via.placeholder.com/15/F18FB0/000000?text=+) `#F18FB0`
+white       ![#f1c4e0](https://via.placeholder.com/15/f1c4e0/000000?text=+) `#f1c4e0`
+background  ![#09090d](https://via.placeholder.com/15/09090d/000000?text=+) `#09090d`
+foreground  ![#e3c7fc](https://via.placeholder.com/15/e3c7fc/000000?text=+) `#e3c7fc`
+cursor      ![#f1c4e0](https://via.placeholder.com/15/f1c4e0/000000?text=+) `#f1c4e0`
 ```
 
 #### Shell
