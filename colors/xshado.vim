@@ -49,8 +49,8 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
   hi CursorLineNr guifg=#de286e guibg=none
   hi LineNr guifg=#a1a1dd guibg=NONE
 
-  hi Search guifg=#302b30 guibg=#dfb7e8
-  hi IncSearch guifg=#dfb7e8 guibg=#de286e guisp=#8897F4 gui=underline,bold
+  hi Search guifg=#8be9fd guibg=NONE gui=bold  "#302b30
+  hi IncSearch guifg=#8be9fd guibg=NONE guisp=#8897F4 gui=bold
   " hi Visual guifg=NONE guibg=#40408f guisp=#40408f
   hi Visual guifg=NONE guibg=#414453
   hi EndOfBuffer guifg=#E9729D guibg=NONE
