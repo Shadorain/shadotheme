@@ -33,10 +33,16 @@ ln ./syntax/* ~/.vim/syntax/
 
 For nvim:
 
+Using the terminal
 ```bash
 mkdir ~/.config/nvim/colors/ ~/.config/nvim/syntax/
 ln ./colors/* ~/.config/nvim/colors/
 ln ./syntax/* ~/.config/nvim/syntax/
+```
+Using nvim
+vim-plug:
+```vim
+Plug 'shadorain/shadotheme
 ```
 
 Finally in your `.vimrc` or `init.vim` set the colorscheme:
