@@ -32,7 +32,12 @@ ln ./syntax/* ~/.vim/syntax/
 ```
 
 For nvim:
+####  vim-plug:
+```vim
+Plug 'Shadorain/shadotheme
+```
 
+#### Using the terminal
 ```bash
 mkdir ~/.config/nvim/colors/ ~/.config/nvim/syntax/
 ln ./colors/* ~/.config/nvim/colors/
