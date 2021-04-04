@@ -32,17 +32,16 @@ ln ./syntax/* ~/.vim/syntax/
 ```
 
 For nvim:
+####  vim-plug:
+```vim
+Plug 'Shadorain/shadotheme
+```
 
-Using the terminal
+#### Using the terminal
 ```bash
 mkdir ~/.config/nvim/colors/ ~/.config/nvim/syntax/
 ln ./colors/* ~/.config/nvim/colors/
 ln ./syntax/* ~/.config/nvim/syntax/
-```
-Using nvim
-vim-plug:
-```vim
-Plug 'shadorain/shadotheme
 ```
 
 Finally in your `.vimrc` or `init.vim` set the colorscheme:
