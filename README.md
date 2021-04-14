@@ -34,7 +34,7 @@ ln ./syntax/* ~/.vim/syntax/
 For nvim:
 ####  vim-plug:
 ```vim
-Plug 'Shadorain/shadotheme
+Plug 'Shadorain/shadotheme'
 ```
 
 #### Using the terminal
