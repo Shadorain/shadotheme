@@ -37,6 +37,11 @@ For nvim:
 Plug 'Shadorain/shadotheme'
 ```
 
+#### Packer:
+```lua
+use 'Shadorain/shadotheme'
+```
+
 #### Using the terminal
 ```bash
 mkdir ~/.config/nvim/colors/ ~/.config/nvim/syntax/
