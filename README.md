@@ -32,7 +32,17 @@ ln ./syntax/* ~/.vim/syntax/
 ```
 
 For nvim:
+####  vim-plug:
+```vim
+Plug 'Shadorain/shadotheme'
+```
 
+#### Packer:
+```lua
+use 'Shadorain/shadotheme'
+```
+
+#### Using the terminal
 ```bash
 mkdir ~/.config/nvim/colors/ ~/.config/nvim/syntax/
 ln ./colors/* ~/.config/nvim/colors/
@@ -63,7 +73,7 @@ let g:lightline = { 'colorscheme': 'deus' }
 ### Terminal
 
 To install my terminal colorscheme it is up to your terminal honestly.
-Here is the colorpallate:
+Here is the color palette:
 
 black       ![#140a1d](https://via.placeholder.com/15/140a1d/000000?text=+) `#140a1d`<br />
 red         ![#B52A5B](https://via.placeholder.com/15/B52A5B/000000?text=+) `#B52A5B`<br />
