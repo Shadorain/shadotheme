@@ -4,7 +4,7 @@ My ultimate purple and pink dark cherryblossom theme!
 For all my screenshots and everything I use Source Code Pro as my font.
 
 * [Installation](#Installation)
-  * [Vim/Nvim](#Vim--Nvim)
+  * [Vim/Neovim](#Vim--Neovim)
   * [Terminal](#Terminal)
     * [Shell](#Shell)
     * [ST](#ST)
@@ -12,26 +12,15 @@ For all my screenshots and everything I use Source Code Pro as my font.
 
 ## Installation
 
-This repo will grow overtime with many different colorschemes for different
-software. Right now the only two are Vim/Nvim and Shell theme.
+> NOTE: This repo will grow overtime with many different colorschemes for different software.
 
-### Vim / Nvim
+### Vim / Neovim
 
-To install this colorscheme for vim or neovim, copy the `syntax/` and `colors/`
-folders into your vim/nvim configuration directory.
-As a side note, if you would like my neovim set up, you can get it here:
-[Shadovim](https://github.com/Shadorain/shadovim)
+> [Shadovim](https://github.com/Shadorain/shadovim)(Nvim): is pretty well integrated with shadotheme and Treesitter for that nicer highlighting,
+> take a look for inspiration or feel free to use it!
 
-For vim (be warned, some things may not work perfectly since this is only tested
-for neovim):
+Install with any Plugin manager
 
-```bash
-mkdir ~/.vim/colors/ ~/.vim/syntax/
-ln ./colors/* ~/.vim/colors/
-ln ./syntax/* ~/.vim/syntax/
-```
-
-For nvim:
 ####  vim-plug:
 ```vim
 Plug 'Shadorain/shadotheme'
@@ -39,20 +28,33 @@ Plug 'Shadorain/shadotheme'
 
 #### Packer:
 ```lua
-use 'Shadorain/shadotheme'
+use { 'Shadorain/shadotheme' }
 ```
 
-#### Using the terminal
+#### Manual
 ```bash
-mkdir ~/.config/nvim/colors/ ~/.config/nvim/syntax/
-ln ./colors/* ~/.config/nvim/colors/
-ln ./syntax/* ~/.config/nvim/syntax/
+mkdir ~/.config/nvim/colors/
+ln ./colors/shado.vim ~/.config/nvim/colors/
 ```
 
 Finally in your `.vimrc` or `init.vim` set the colorscheme:
 
 ```vim
-colorscheme xshado
+colorscheme shado
+```
+#### Lualine
+
+Skip this step if using a plugin manager
+```bash
+cp -f ./lua/lualine/themes/shado.lua ~/.local/share/nvim/site/pack/packer/start/lualine.nvim/lua/lualine/themes/shado.lua
+```
+
+After copying the theme file for lualine, we need to set it in our config!
+
+```lua
+require'lualine'.setup {
+  options = { theme = 'shado' }
+}
 ```
 
 #### Lightline
@@ -63,8 +65,9 @@ To install the theme for the lightline bar in neovim use:
 ln -sf ./shado_lightline.vim ~/.local/share/nvim/plugged/lightline.vim/autoload/lightline/colorscheme/deus.vim
 ```
 
-In vim set the lightline theme to `deus.vim` (note I did this because I havent found
-a way to add a custom theme so I overwrote one of the default ones)
+We need to set the lightline theme in our config to `deus.vim` (note I did
+this because I havent found a way to add a custom theme so I overwrote one
+of the default ones)
 
 ```vim
 let g:lightline = { 'colorscheme': 'deus' }
@@ -97,7 +100,7 @@ cursor      ![#f1c4e0](https://via.placeholder.com/15/f1c4e0/000000?text=+) `#f1
 
 #### Shell
 
-To have special LS_COLORS, set this environment variable in your shell's
+To have special LS_COLORS, set these environment variables in your shell's
 configuration:
 
 ```bash
@@ -109,8 +112,8 @@ EXA_COLORS="*.md=38;5;68:*.log=38;5;68:*.c=38;5;169:*.h=38;5;135:*.o=38;5;97:*.y
 
 This struct holds the colors for ST to handle. Copy and paste this
 into `config.h` in your st directory and recompile.
-To simply use my configuration and patched setup of ST, checkout here:
-[ShadoST](https://github.com/Shadorain/shadoST)
+You could also simply use my configuration which is fully patched
+and setup with shadotheme, checkout here: [ShadoST](https://github.com/Shadorain/shadoST)
 
 ```c
 /* Terminal colors (16 first used in escape sequence) */
