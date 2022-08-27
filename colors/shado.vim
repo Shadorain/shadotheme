@@ -55,8 +55,8 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
   hi IncSearch guifg=#8be9fd guibg=NONE guisp=#8897F4 gui=bold
   hi Visual guifg=NONE guibg=#262440 blend=10
   hi EndOfBuffer guifg=#E9729D guibg=NONE
-  hi Folded guifg=#53606e guibg=NONE
-  hi FoldColumn guifg=#53606e guibg=NONE
+  hi Folded guifg=#53606e guibg=#171526
+  hi FoldColumn guifg=#6161b3 guibg=NONE
   hi MatchWord guifg=#0f5bca guibg=NONE
   hi MatchParen guifg=#8be9fd guibg=NONE
   hi Signify guifg=#4484d1 guibg=NONE
@@ -158,14 +158,23 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
   hi FloatTitle guifg=#bd93f9 guibg=NONE blend=0
 
   " Treesitter
-  hi link TSInclude Define
-  hi link TSVariable Identifier
-  hi TSField guifg=#E9729D guibg=NONE
-  hi TSParameter guifg=#9ca7ff guibg=NONE
-  hi link TSPunctSpecial Include
-  hi link TSWarning WarnMsg
-  hi link TSDanger Error
-  hi link TSError Error
+  hi link @text.title Title
+  hi link @definition.import Define
+  hi link @definition.namespace Define
+  hi link @namespace Pmenu
+  hi link @definition.macro Define
+  hi link @include Define
+  hi link @variable Identifier
+  hi link @variable.builtin Define
+  hi link @definition.var @variable
+  hi @field guifg=#E9729D guibg=NONE
+  hi link @definition.field @field
+  hi @parameter guifg=#9ca7ff guibg=NONE
+  hi link @punctuation.special Include
+  hi link @text.warning WarnMsg
+  hi link @text.danger Error
+  hi link @error Error
+
 
   " Treesitter Markdown
   hi htmlH1 guifg=#bd93f9
@@ -327,6 +336,12 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
   hi default link UfoPreviewSbar PmenuSbar
   hi default link UfoPreviewThumb PmenuThumb
   hi default link UfoFoldedEllipsis Conditional
+
+  " Lualine
+  hi LualineDiagnosticError guifg=#ac2958 guibg=#1b1b29 blend=10
+  hi LualineDiagnosticWarn guifg=#F18FB0 guibg=#1b1b29 blend=10
+  hi LualineDiagnosticInfo guifg=#fca1e7 guibg=#1b1b29 blend=10
+  hi LualineDiagnosticHint guifg=#849be0 guibg=#1b1b29 blend=10
   " Rust {{{
   hi! link rsForeignConst Constant
   hi! link rsForeignFunc Function
