@@ -338,10 +338,10 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
   hi default link UfoFoldedEllipsis Conditional
 
   " Lualine
-  hi LualineDiagnosticError guifg=#ac2958 guibg=#1b1b29 blend=10
-  hi LualineDiagnosticWarn guifg=#F18FB0 guibg=#1b1b29 blend=10
-  hi LualineDiagnosticInfo guifg=#fca1e7 guibg=#1b1b29 blend=10
-  hi LualineDiagnosticHint guifg=#849be0 guibg=#1b1b29 blend=10
+  hi LualineDiagnosticError guifg=#ac2958 guibg=#111119 blend=10
+  hi LualineDiagnosticWarn  guifg=#F18FB0 guibg=#111119 blend=10
+  hi LualineDiagnosticInfo  guifg=#fca1e7 guibg=#111119 blend=10
+  hi LualineDiagnosticHint  guifg=#849be0 guibg=#111119 blend=10
   " Rust {{{
   hi! link rsForeignConst Constant
   hi! link rsForeignFunc Function
