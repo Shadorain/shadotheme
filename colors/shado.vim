@@ -74,7 +74,7 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
   hi WarnMsg guifg=#F18FB0 guibg=NONE
 
   hi ColorColumn guifg=NONE guibg=#2f3037
-  hi QuickFixLine guifg=#dfdfe0 guibg=#0f5bca
+  hi QuickFixLine guifg=#bd93f9 guibg=#1b1b29 gui=bold
   hi StatusLine guifg=#1B1B29 guibg=#35355e guisp=#35355e gui=bold
   hi StatusLineNC guifg=#1B1B29 guibg=#35355e guisp=#35355e
   " hi VertSplit guifg=#1B1B29 guibg=#35355E guisp=#35355e
