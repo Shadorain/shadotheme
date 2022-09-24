@@ -342,6 +342,15 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
   hi LualineDiagnosticWarn  guifg=#F18FB0 guibg=#111119 blend=10
   hi LualineDiagnosticInfo  guifg=#fca1e7 guibg=#111119 blend=10
   hi LualineDiagnosticHint  guifg=#849be0 guibg=#111119 blend=10
+  
+  " Which Key
+  hi link WhichKey Function
+  hi link WhichKeyGroup Keyword
+  hi link WhichKeySeparator Comment
+  hi link WhichKeyDesc Define
+  hi link WhichKeyBorder FloatBorder
+  hi link WhichKeyValue Constant
+  hi WhichKeyFloat guibg=#111119
   " Rust {{{
   hi! link rsForeignConst Constant
   hi! link rsForeignFunc Function
