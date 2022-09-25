@@ -66,12 +66,13 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
   hi FloatermBorder guifg=#ff79c6 guibg=NONE blend=0
   hi Floating guifg=#6272a4 guibg=NONE blend=0
 
-  hi Error guifg=#ac2958 guibg=NONE
-  hi ErrorMsg guifg=#ff8170 guibg=NONE
-  hi ModeMsg guifg=#fca1e7 guibg=NONE
-  hi MoreMsg guifg=#ff7ab2 guibg=NONE
-  hi Question guifg=#ff7ab2 guibg=NONE
-  hi WarnMsg guifg=#F18FB0 guibg=NONE
+  hi Error guifg=#ac2958 guibg=#21131f      "#301626 
+  hi ErrorMsg guifg=#ff8170 guibg=#291c22   "#41272a 
+  hi ModeMsg guifg=#fca1e7 guibg=#291f2e    "#402e42 
+  hi MoreMsg guifg=#ff7ab2 guibg=#291c28    "#412638 
+  hi Question guifg=#ff7ab2 guibg=#291c28   "#412638 
+  hi WarnMsg guifg=#F18FB0 guibg=#271e28    "#3e2a37 
+  hi InfoMsg guifg=#849be0 guibg=#1d1f2d    "#282d41 
 
   hi ColorColumn guifg=NONE guibg=#2f3037
   hi QuickFixLine guifg=#bd93f9 guibg=#1b1b29 gui=bold
@@ -197,27 +198,27 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
   hi link DiagnosticSignError Error
   hi link DiagnosticSignWarn WarnMsg
   hi link DiagnosticSignInfo ModeMsg
-  hi link DiagnosticSignHint PreProc
+  hi link DiagnosticSignHint InfoMsg
   hi link DiagnosticDefaultError Error
   hi link DiagnosticDefaultWarn WarnMsg
   hi link DiagnosticDefaultInfo ModeMsg
-  hi link DiagnosticDefaultHint PreProc
+  hi link DiagnosticDefaultHint InfoMsg
   hi link DiagnosticVirtualTextError Error
   hi link DiagnosticVirtualTextWarn WarnMsg
   hi link DiagnosticVirtualTextInfo ModeMsg
-  hi link DiagnosticVirtualTextHint PreProc
+  hi link DiagnosticVirtualTextHint InfoMsg
   hi link DiagnosticFloatingError Error
   hi link DiagnosticFloatingWarn WarnMsg
   hi link DiagnosticFloatingInfo ModeMsg
-  hi link DiagnosticFloatingHint PreProc
+  hi link DiagnosticFloatingHint InfoMsg
   hi link DiagnosticError Error
   hi link DiagnosticWarn WarnMsg
   hi link DiagnosticInfo ModeMsg
-  hi link DiagnosticHint PreProc
+  hi link DiagnosticHint InfoMsg
   hi link DiagnosticUnderlineError Error
   hi link DiagnosticUnderlineWarn WarnMsg
   hi link DiagnosticUnderlineInfo ModeMsg
-  hi link DiagnosticUnderlineHint PreProc
+  hi link DiagnosticUnderlineHint InfoMsg
 
   " Telescope
   hi TelescopeBorder guifg=#bd93f9
