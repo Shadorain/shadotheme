@@ -211,14 +211,15 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
   hi link DiagnosticFloatingWarn WarnMsg
   hi link DiagnosticFloatingInfo ModeMsg
   hi link DiagnosticFloatingHint InfoMsg
-  hi link DiagnosticError Error
-  hi link DiagnosticWarn WarnMsg
-  hi link DiagnosticInfo ModeMsg
-  hi link DiagnosticHint InfoMsg
   hi link DiagnosticUnderlineError Error
   hi link DiagnosticUnderlineWarn WarnMsg
   hi link DiagnosticUnderlineInfo ModeMsg
   hi link DiagnosticUnderlineHint InfoMsg
+
+  hi link DiagnosticWarn WarnMsg
+  hi link DiagnosticError Error
+  hi link DiagnosticInfo ModeMsg
+  hi link DiagnosticHint InfoMsg
 
   " Telescope
   hi TelescopeBorder guifg=#bd93f9
@@ -337,6 +338,9 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
   hi default link UfoPreviewSbar PmenuSbar
   hi default link UfoPreviewThumb PmenuThumb
   hi default link UfoFoldedEllipsis Conditional
+
+  " Alpha Logo
+  hi AlphaLogo guifg=#6a5acd guibg=NONE
 
   " Lualine
   hi LualineDiagnosticError guifg=#ac2958 guibg=#111119 blend=10
