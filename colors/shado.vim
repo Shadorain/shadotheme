@@ -22,8 +22,8 @@ let g:terminal_color_5 = '#E9729D'
 let g:terminal_color_6 = '#F18FB0'
 let g:terminal_color_7 = '#f1c4e0'
 " Bright
-let g:terminal_color_8 = '#a8899c'
-let g:terminal_color_9 = '#B52A5B'
+let g:terminal_color_8  = '#a8899c'
+let g:terminal_color_9  = '#B52A5B'
 let g:terminal_color_10 = '#FF4971'
 let g:terminal_color_11 = '#8897F4'
 let g:terminal_color_12 = '#bd93f9'
@@ -176,6 +176,108 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
   hi link @text.danger Error
   hi link @error Error
 
+  " Neorg
+  hi link @attribute Title
+  " Neorg Markers
+  hi link @neorg.markers.prefix Directory
+  hi link @neorg.markers.title DocComment
+  " Neorg Headings
+  hi link @neorg.headings.2.prefix String
+  hi link @neorg.headings.2.title String
+  hi link @neorg.headings.3.prefix Conditional
+  hi link @neorg.headings.3.title Conditional
+  hi link @neorg.headings.4.prefix htmlH1
+  hi link @neorg.headings.4.title htmlH1
+  hi link @neorg.headings.5.prefix Special
+  hi link @neorg.headings.5.title Special
+  hi link @neorg.headings.6.prefix Type
+  hi link @neorg.headings.6.title Type
+  " Neorg Quotes
+  hi link @neorg.quotes.1.prefix DocComment
+  hi link @neorg.quotes.1.content Comment
+  hi link @neorg.quotes.2.prefix DocComment
+  hi link @neorg.quotes.2.content Comment
+  hi link @neorg.quotes.3.prefix DocComment
+  hi link @neorg.quotes.3.content Comment
+  hi link @neorg.quotes.4.prefix DocComment
+  hi link @neorg.quotes.4.content Comment
+  hi link @neorg.quotes.5.prefix DocComment
+  hi link @neorg.quotes.5.content Comment
+  hi link @neorg.quotes.6.prefix DocComment
+  hi link @neorg.quotes.6.content Comment
+  " Neorg Delimiters
+  hi link @neorg.delimiters.weak Comment
+  hi link @neorg.delimiters.strong NonText
+  hi link @neorg.delimiters.horizontal_line Exception
+  " Neorg Lists
+  hi link @neorg.delimiters.weak Comment
+  " Neorg Todos
+  hi TodoNorm guifg=#cba6f7
+  hi link @neorg.todo_items.uncertain.1 WarnMsg
+  hi link @neorg.todo_items.uncertain.2 WarnMsg
+  hi link @neorg.todo_items.uncertain.3 WarnMsg
+  hi link @neorg.todo_items.uncertain.4 WarnMsg
+  hi link @neorg.todo_items.uncertain.5 WarnMsg
+  hi link @neorg.todo_items.uncertain.6 WarnMsg
+  hi link @neorg.todo_items.uncertain.1.content TodoNorm
+  hi link @neorg.todo_items.uncertain.2.content TodoNorm
+  hi link @neorg.todo_items.uncertain.3.content TodoNorm
+  hi link @neorg.todo_items.uncertain.4.content TodoNorm
+  hi link @neorg.todo_items.uncertain.5.content TodoNorm
+  hi link @neorg.todo_items.uncertain.6.content TodoNorm
+  hi link @neorg.todo_items.done.1 Title
+  hi link @neorg.todo_items.done.2 Title
+  hi link @neorg.todo_items.done.3 Title
+  hi link @neorg.todo_items.done.4 Title
+  hi link @neorg.todo_items.done.5 Title
+  hi link @neorg.todo_items.done.6 Title
+  hi link @neorg.todo_items.done.1.content TodoNorm
+  hi link @neorg.todo_items.done.2.content TodoNorm
+  hi link @neorg.todo_items.done.3.content TodoNorm
+  hi link @neorg.todo_items.done.4.content TodoNorm
+  hi link @neorg.todo_items.done.5.content TodoNorm
+  hi link @neorg.todo_items.done.6.content TodoNorm
+  hi link @neorg.todo_items.urgent.1.content TodoNorm
+  hi link @neorg.todo_items.urgent.2.content TodoNorm
+  hi link @neorg.todo_items.urgent.3.content TodoNorm
+  hi link @neorg.todo_items.urgent.4.content TodoNorm
+  hi link @neorg.todo_items.urgent.5.content TodoNorm
+  hi link @neorg.todo_items.urgent.6.content TodoNorm
+  hi link @neorg.todo_items.recurring.1.content TodoNorm
+  hi link @neorg.todo_items.recurring.2.content TodoNorm
+  hi link @neorg.todo_items.recurring.3.content TodoNorm
+  hi link @neorg.todo_items.recurring.4.content TodoNorm
+  hi link @neorg.todo_items.recurring.5.content TodoNorm
+  hi link @neorg.todo_items.recurring.6.content TodoNorm
+  hi link @neorg.todo_items.undone.1.content TodoNorm
+  hi link @neorg.todo_items.undone.2.content TodoNorm
+  hi link @neorg.todo_items.undone.3.content TodoNorm
+  hi link @neorg.todo_items.undone.4.content TodoNorm
+  hi link @neorg.todo_items.undone.5.content TodoNorm
+  hi link @neorg.todo_items.undone.6.content TodoNorm
+  hi link @neorg.todo_items.on_hold.1 Comment
+  hi link @neorg.todo_items.on_hold.2 Comment
+  hi link @neorg.todo_items.on_hold.3 Comment
+  hi link @neorg.todo_items.on_hold.4 Comment
+  hi link @neorg.todo_items.on_hold.5 Comment
+  hi link @neorg.todo_items.on_hold.6 Comment
+  hi link @neorg.todo_items.on_hold.1.content TodoNorm
+  hi link @neorg.todo_items.on_hold.2.content TodoNorm
+  hi link @neorg.todo_items.on_hold.3.content TodoNorm
+  hi link @neorg.todo_items.on_hold.4.content TodoNorm
+  hi link @neorg.todo_items.on_hold.5.content TodoNorm
+  hi link @neorg.todo_items.on_hold.6.content TodoNorm
+  hi link @neorg.tags.carryover.target TodoNorm
+  " Neorg Markup
+  hi @neorg.markup.verbatim guibg=#18171c guifg=#cba6f7
+  " Neorg Tags
+  hi link @neorg.tags.carryover.begin Define
+  hi link @neorg.tags.carryover.name.delimiter Comment
+  " Neorg Definitions
+  hi link @neorg.definitions.prefix String
+  hi link @neorg.definitions.title Title
+  hi link @neorg.definitions.suffix String
+  hi link @neorg.definitions.content @neorg.tags.carryover.target
 
   " Treesitter Markdown
   hi htmlH1 guifg=#bd93f9
