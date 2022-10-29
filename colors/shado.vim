@@ -143,15 +143,15 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
   hi NonText guifg=#2f3037 guibg=NONE
   " hi NonText guifg=#E9729D guibg=NONE
 
-  hi Underlined guifg=#5d5daf guibg=NONE gui=underline
-  hi SpellBad guifg=NONE guibg=NONE gui=undercurl
-  hi SpellCap guifg=NONE guibg=NONE gui=undercurl
-  hi SpellLocal guifg=NONE guibg=NONE gui=undercurl
-  hi SpellRare guifg=NONE guibg=NONE gui=undercurl
+  hi Underlined guifg=#5d5daf guibg=NONE gui=underline guisp=#5d5daf
+  hi SpellBad guifg=NONE guibg=NONE gui=undercurl guisp=#5d5daf
+  hi SpellCap guifg=NONE guibg=NONE gui=undercurl guisp=#5d5daf
+  hi SpellLocal guifg=NONE guibg=NONE gui=undercurl guisp=#5d5daf
+  hi SpellRare guifg=NONE guibg=NONE gui=undercurl guisp=#5d5daf
 
   hi Pmenu guifg=#8677d9 guibg=NONE
   hi PmenuSbar guifg=#a883a8 guibg=NONE
-  hi PmenuSel guifg=#bd93f9 guibg=NONE gui=bold,underline
+  hi PmenuSel guifg=#bd93f9 guibg=NONE gui=bold,underline guisp=#bd93f9
   hi PmenuThumb guifg=NONE guibg=#1b1b29
 
   hi NormalFloat guibg=NONE
@@ -273,6 +273,19 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
   " Neorg Tags
   hi link @neorg.tags.carryover.begin Define
   hi link @neorg.tags.carryover.name.delimiter Comment
+  " Neorg Lists
+  hi link @neorg.lists.ordered.1.prefix Include
+  hi link @neorg.lists.ordered.2.prefix Include
+  hi link @neorg.lists.ordered.3.prefix Include
+  hi link @neorg.lists.ordered.4.prefix Include
+  hi link @neorg.lists.ordered.5.prefix Include
+  hi link @neorg.lists.ordered.6.prefix Include
+  hi link @neorg.lists.unordered.1.prefix Include
+  hi link @neorg.lists.unordered.2.prefix Include
+  hi link @neorg.lists.unordered.3.prefix Include
+  hi link @neorg.lists.unordered.4.prefix Include
+  hi link @neorg.lists.unordered.5.prefix Include
+  hi link @neorg.lists.unordered.6.prefix Include
   " Neorg Definitions
   hi link @neorg.definitions.prefix String
   hi link @neorg.definitions.title Title
@@ -313,15 +326,15 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
   hi link DiagnosticFloatingWarn WarnMsg
   hi link DiagnosticFloatingInfo ModeMsg
   hi link DiagnosticFloatingHint InfoMsg
-  hi link DiagnosticUnderlineError Error
-  hi link DiagnosticUnderlineWarn WarnMsg
-  hi link DiagnosticUnderlineInfo ModeMsg
-  hi link DiagnosticUnderlineHint InfoMsg
 
   hi link DiagnosticWarn WarnMsg
   hi link DiagnosticError Error
   hi link DiagnosticInfo ModeMsg
   hi link DiagnosticHint InfoMsg
+  hi DiagnosticUnderlineError guisp=#ac2958
+  hi DiagnosticUnderlineWarn guisp=#F18FB0
+  hi DiagnosticUnderlineInfo guisp=#fca1e7
+  hi DiagnosticUnderlineHint guisp=#849BE0
 
   " Telescope
   hi TelescopeBorder guifg=#bd93f9
