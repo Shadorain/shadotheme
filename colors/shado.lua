@@ -13,254 +13,300 @@ end
 
 local colors = {
     color_1 = "#1b1b29",
-    color_2 = "",
-    color_3 = "",
-    color_4 = "",
-    color_5 = "",
-    color_6 = "",
-    color_7 = "",
-    color_8 = "",
-    color_9 = "",
-    color_10 = "",
-    color_11 = "",
-    color_12 = "",
-    color_13 = "",
-    color_14 = "",
-    color_15 = "",
-    color_16 = "",
-    color_17 = "",
-    color_18 = "",
-    color_19 = "",
-    color_20 = "",
-    color_21 = "",
+    color_2 = "#111119",
+    color_3 = "#140a1d",
+    color_4 = "#B52A5B",
+    color_5 = "#FF4971",
+    color_6 = "#8897F4",
+    color_7 = "#bd93f9",
+    color_8 = "#E9729D",
+    color_9 = "#F18FB0",
+    color_10 = "#f1c4e0",
+    color_11 = "#a8899c",
+    color_12 = "#a1a1dd",
+    color_13 = "#de286e",
+    color_14 = "#ac2958",
+    color_15 = "#fca1e7",
+    color_16 = "#849BE0",
+    color_17 = "#262440",
+    color_18 = "#ff7ab2",
+    color_19 = "#8677d9",
+    color_20 = "#e086e0",
+    color_21 = "#ac295",
+    color_22 = "#2f77a1",
+    color_23 = "#5d5daf",
+    color_24 = "#6272a4",
+    color_25 = "#000000",
+    color_26 = "#6a5acd",
+    color_27 = "#c081fa",
+    color_28 = "#b488bf",
+    color_29 = "#eba4e9",
+    color_30 = "#9ca7ff",
+    color_31 = "#cba6f7",
+    color_32 = "#dfb7e8",
+    color_33 = "#6161b3",
+    color_34 = "#8be9fd",
+    color_35 = "#53606e",
+    color_36 = "#171526",
+    color_37 = "#0f5bca",
+    color_38 = "#4484d1",
+    color_39 = "#ff79c6",
+    color_40 = "#21131f",
+    color_41 = "#ff8170",
+    color_42 = "#291c22",
+    color_43 = "#291f2e",
+    color_44 = "#291c28",
+    color_45 = "#271e28",
+    color_46 = "#1d1f2d",
+    color_47 = "#2f3037",
+    color_48 = "#35355e",
+    color_49 = "#eed6ee",
+    color_50 = "#37d4a7",
+    color_51 = "#2c9465",
+    color_52 = "#c9083f",
+    color_53 = "#e3d3eb",
+    color_54 = "#4d254d",
+    color_55 = "#bc6bd0",
+    color_56 = "#a048ed",
+    color_57 = "#6876de",
+    color_58 = "#943d84",
+    color_59 = "#f72d7c",
+    color_60 = "#6875ed",
+    color_61 = "#ab506e",
+    color_62 = "#302b30",
+    color_63 = "#a883a8",
+    color_64 = "#18171c",
+    color_65 = "#78c2b3",
+    color_66 = "#dabaff",
+    color_67 = "#393b44",
 }
 
-vim.g.terminal_color_0 = "#140a1d"
-vim.g.terminal_color_1 = "#B52A5B"
-vim.g.terminal_color_2 = "#FF4971"
-vim.g.terminal_color_3 = "#8897F4"
-vim.g.terminal_color_4 = "#bd93f9"
-vim.g.terminal_color_5 = "#E9729D"
-vim.g.terminal_color_6 = "#F18FB0"
-vim.g.terminal_color_7 = "#f1c4e0"
-vim.g.terminal_color_8 = "#a8899c"
-vim.g.terminal_color_9 = "#B52A5B"
-vim.g.terminal_color_10 = "#FF4971"
-vim.g.terminal_color_11 = "#8897F4"
-vim.g.terminal_color_12 = "#bd93f9"
-vim.g.terminal_color_13 = "#E9729D"
-vim.g.terminal_color_14 = "#F18FB0"
-vim.g.terminal_color_15 = "#f1c4e0"
+vim.g.terminal_color_0 = colors.color_3
+vim.g.terminal_color_1 = colors.color_4
+vim.g.terminal_color_2 = colors.color_5
+vim.g.terminal_color_3 = colors.color_6
+vim.g.terminal_color_4 = colors.color_7
+vim.g.terminal_color_5 = colors.color_8
+vim.g.terminal_color_6 = colors.color_9
+vim.g.terminal_color_7 = colors.color_10
+vim.g.terminal_color_8 = colors.color_11
+vim.g.terminal_color_9 = colors.color_4
+vim.g.terminal_color_10 = colors.color_5
+vim.g.terminal_color_11 = colors.color_6
+vim.g.terminal_color_12 = colors.color_7
+vim.g.terminal_color_13 = colors.color_8
+vim.g.terminal_color_14 = colors.color_9
+vim.g.terminal_color_15 = colors.color_10
 
 vim.api.nvim_create_autocmd("ColorScheme", {
     callback = function()
-        hl("Normal", { bg = "#111119" })
+        hl("Normal", { bg = colors.color_2 })
     end,
 })
 
 if (vim.fn.has("termguicolors") and vim.opt.termguicolors) or vim.fn.has("gui_running") then
     vim.g.terminal_ansi_colors = {
-        "#140a1d",
-        "#B52A5B",
-        "#FF4971",
-        "#8897F4",
-        "#bd93f9",
-        "#E9729D",
-        "#F18FB0",
-        "#f1c4e0",
-        "#a8899c",
-        "#B52A5B",
-        "#FF4971",
-        "#8897F4",
-        "#bd93f9",
-        "#E9729D",
-        "#F18FB0",
-        "#f1c4e0",
+        colors.color_3,
+        colors.color_4,
+        colors.color_5,
+        colors.color_6,
+        colors.color_7,
+        colors.color_8,
+        colors.color_9,
+        colors.color_10,
+        colors.color_11,
+        colors.color_4,
+        colors.color_5,
+        colors.color_6,
+        colors.color_7,
+        colors.color_8,
+        colors.color_9,
+        colors.color_10,
     }
 
     vim.opt.background = "dark"
     vim.cmd.hi("clear")
     vim.g.colors_name = "shado"
 
-    hl("SignColumn", { bg = "#111119" })
-    hl("LineNr", { fg = "#a1a1dd", bg = "#111119" })
-    hl("CursorLineNr", { fg = "#de286e", bg = "#111119" })
+    hl("SignColumn", { bg = colors.color_2 })
+    hl("LineNr", { fg = colors.color_12, bg = colors.color_2 })
+    hl("CursorLineNr", { fg = colors.color_13, bg = colors.color_2 })
 
-    hl("DiagnosticUnderlineError", { sp = "#ac2958" })
-    hl("DiagnosticUnderlineWarn", { sp = "#F18FB0" })
-    hl("DiagnosticUnderlineInfo", { sp = "#fca1e7" })
-    hl("DiagnosticUnderlineHint", { sp = "#849BE0" })
+    hl("DiagnosticUnderlineError", { sp = colors.color_14 })
+    hl("DiagnosticUnderlineWarn", { sp = colors.color_9 })
+    hl("DiagnosticUnderlineInfo", { sp = colors.color_15 })
+    hl("DiagnosticUnderlineHint", { sp = colors.color_16 })
 
-    hl("TelescopeBorder", { fg = "#bd93f9" })
-    hl("TelescopeSelection", { bg = "#262440", bold = true })
-    hl("TelescopeSelectionCaret", { fg = "#8897F4", bg = "#262440" })
-    hl("TelescopePromptPrefix", { fg = "#ff7ab2" })
-    hl("TelescopeTitle", { fg = "#ff7ab2" })
+    hl("TelescopeBorder", { fg = colors.color_7 })
+    hl("TelescopeSelection", { bg = colors.color_17, bold = true })
+    hl("TelescopeSelectionCaret", { fg = colors.color_6, bg = colors.color_17 })
+    hl("TelescopePromptPrefix", { fg = colors.color_18 })
+    hl("TelescopeTitle", { fg = colors.color_18 })
 
-    hl("CmpItemAbbr", { fg = "#8677d9" })
-    hl("CmpItemAbbrMatch", { fg = "#e086e0", bold = true })
-    hl("CmpItemAbbrDeprecated", { fg = "#ac295" })
-    hl("CmpItemAbbrMatchFuzzy", { fg = "#bd93f9" })
-    hl("CmpItemKind", { fg = "#FF4971" })
-    hl("CmpItemMenu", { fg = "#ff7ab2" })
+    hl("CmpItemAbbr", { fg = colors.color_19 })
+    hl("CmpItemAbbrMatch", { fg = colors.color_20, bold = true })
+    hl("CmpItemAbbrDeprecated", { fg = colors.color_21 })
+    hl("CmpItemAbbrMatchFuzzy", { fg = colors.color_7 })
+    hl("CmpItemKind", { fg = colors.color_5 })
+    hl("CmpItemMenu", { fg = colors.color_18 })
 
-    hl("Beacon", { bg = "#1b1b29" })
+    hl("Beacon", { bg = colors.color_1 })
 
-    hl("BookmarkSign", { fg = "#2f77a1" })
+    hl("BookmarkSign", { fg = colors.color_22 })
     hl("BookmarkLine", {})
-    hl("BookmarkAnnotationSign", { fg = "#5d5daf" })
+    hl("BookmarkAnnotationSign", { fg = colors.color_23 })
     hl("BookmarkAnnotationLine", {})
 
-    hl("NvimTreeWindowPicker", { fg = "#de286e", bold = true })
+    hl("NvimTreeWindowPicker", { fg = colors.color_13, bold = true })
 
     hl("HopNextKey", { link = "NvimTreeWindowPicker" })
     hl("HopPreview", { link = "Search" })
-    hl("HopUnmatched", { fg = "#6272a4" })
+    hl("HopUnmatched", { fg = colors.color_24 })
 
     hl("CybuFocus", { link = "EndOfBuffer" })
     hl("CybuAdjacent", { link = "FloatermNC" })
-    hl("CybuBackground", { bg = "#000000", blend = 10 })
+    hl("CybuBackground", { bg = colors.color_25, blend = 10 })
     hl("CybuBorder", { link = "FloatermBorder" })
 
     hl("UfoPreviewSbar", { link = "PmenuSbar", default = true })
     hl("UfoPreviewThumb", { link = "PmenuThumb", default = true })
     hl("UfoFoldedEllipsis", { link = "Conditional", default = true })
 
-    hl("AlphaLogo", { fg = "#6a5acd" })
+    hl("AlphaLogo", { fg = colors.color_26 })
 
-    hl("LualineDiagnosticError", { fg = "#ac2958", bg = "#111119", blend = 10 })
-    hl("LualineDiagnosticWarn", { fg = "#F18FB0", bg = "#111119", blend = 10 })
-    hl("LualineDiagnosticInfo", { fg = "#fca1e7", bg = "#111119", blend = 10 })
-    hl("LualineDiagnosticHint", { fg = "#849be0", bg = "#111119", blend = 10 })
+    hl("LualineDiagnosticError", { fg = colors.color_14, bg = colors.color_2, blend = 10 })
+    hl("LualineDiagnosticWarn", { fg = colors.color_9, bg = colors.color_2, blend = 10 })
+    hl("LualineDiagnosticInfo", { fg = colors.color_15, bg = colors.color_2, blend = 10 })
+    hl("LualineDiagnosticHint", { fg = colors.color_16, bg = colors.color_2, blend = 10 })
 
-    hl("htmlH1", { fg = "#bd93f9" })
-    hl("htmlH2", { fg = "#8897F4" })
-    hl("htmlH3", { fg = "#F18FB0" })
-    hl("htmlH4", { fg = "#E9729D" })
-    hl("htmlH5", { fg = "#FF4971" })
-    hl("htmlH6", { fg = "#B52A5B" })
-    hl("mkdHeading", { fg = "#8677d9" })
-    hl("mkdListItem", { fg = "#c081fa" })
-    hl("mkdListItemLine", { fg = "#b488bf" })
-    hl("mkdNonListItemBlock", { fg = "#eba4e9" })
-    hl("mkdItalic", { fg = "#b488bf", bold = true })
+    hl("htmlH1", { fg = colors.color_7 })
+    hl("htmlH2", { fg = colors.color_6 })
+    hl("htmlH3", { fg = colors.color_9 })
+    hl("htmlH4", { fg = colors.color_8 })
+    hl("htmlH5", { fg = colors.color_5 })
+    hl("htmlH6", { fg = colors.color_4 })
+    hl("mkdHeading", { fg = colors.color_19 })
+    hl("mkdListItem", { fg = colors.color_27 })
+    hl("mkdListItemLine", { fg = colors.color_28 })
+    hl("mkdNonListItemBlock", { fg = colors.color_29 })
+    hl("mkdItalic", { fg = colors.color_28, bold = true })
     hl("htmlItalic", { bold = true })
     hl("mkdCode", { link = "Comment" })
     hl("mkdCodeDelimiter", { link = "htmlH5" })
 
-    hl("LspCodeLens", { fg = "#5d5daf", blend = 10 })
-    hl("LspCodeLensSeparator", { fg = "#6272a4", blend = 10 })
-    hl("LspSignatureActiveParameter", { fg = "#6272a4", blend = 10 })
+    hl("LspCodeLens", { fg = colors.color_23, blend = 10 })
+    hl("LspCodeLensSeparator", { fg = colors.color_24, blend = 10 })
+    hl("LspSignatureActiveParameter", { fg = colors.color_24, blend = 10 })
 
-    hl("@field", { fg = "#E9729D" })
-    hl("@parameter", { fg = "#9ca7ff" })
-    hl("TodoNorm", { fg = "#cba6f7" })
+    hl("@field", { fg = colors.color_8 })
+    hl("@parameter", { fg = colors.color_30 })
+    hl("TodoNorm", { fg = colors.color_31 })
 
-    hl("Normal", { fg = "#dfb7e8" })
+    hl("Normal", { fg = colors.color_32 })
 
-    hl("Cursor", { fg = "#dfb7e8", bg = "#6161b3", sp = "#6161b3" })
-    hl("CursorLine", { bg = colors.color_1, sp = "#6161b3" })
-    hl("CursorColumn", { bg = colors.color_1, sp = "#6161b3" })
+    hl("Cursor", { fg = colors.color_32, bg = colors.color_33, sp = colors.color_33 })
+    hl("CursorLine", { bg = colors.color_1, sp = colors.color_33 })
+    hl("CursorColumn", { bg = colors.color_1, sp = colors.color_33 })
 
-    hl("Search", { fg = "#8be9fd", bold = true })
-    hl("IncSearch", { fg = "#8be9fd", sp = "#8897F4", bold = true })
-    hl("Visual", { bg = "#262440", blend = 10 })
-    hl("EndOfBuffer", { fg = "#E9729D" })
-    hl("Folded", { fg = "#53606e", bg = "#171526" })
-    hl("FoldColumn", { fg = "#6161b3" })
-    hl("MatchWord", { fg = "#0f5bca" })
-    hl("MatchParen", { fg = "#8be9fd" })
-    hl("Signify", { fg = "#4484d1" })
-    hl("Ignore", { fg = "#53606e" })
+    hl("Search", { fg = colors.color_34, bold = true })
+    hl("IncSearch", { fg = colors.color_34, sp = colors.color_6, bold = true })
+    hl("Visual", { bg = colors.color_17, blend = 10 })
+    hl("EndOfBuffer", { fg = colors.color_8 })
+    hl("Folded", { fg = colors.color_35, bg = colors.color_36 })
+    hl("FoldColumn", { fg = colors.color_33 })
+    hl("MatchWord", { fg = colors.color_37 })
+    hl("MatchParen", { fg = colors.color_34 })
+    hl("Signify", { fg = colors.color_38 })
+    hl("Ignore", { fg = colors.color_35 })
 
-    hl("FloatermNC", { fg = "#6161b3" })
-    hl("FloatermBorder", { fg = "#ff79c6", blend = 0 })
-    hl("Floating", { fg = "#6272a4", blend = 0 })
+    hl("FloatermNC", { fg = colors.color_33 })
+    hl("FloatermBorder", { fg = colors.color_39, blend = 0 })
+    hl("Floating", { fg = colors.color_24, blend = 0 })
 
-    hl("Error", { fg = "#ac2958", bg = "#21131f" })
-    hl("ErrorMsg", { fg = "#ff8170", bg = "#291c22" })
-    hl("ModeMsg", { fg = "#fca1e7", bg = "#291f2e" })
-    hl("MoreMsg", { fg = "#ff7ab2", bg = "#291c28" })
-    hl("Question", { fg = "#ff7ab2", bg = "#291c28" })
-    hl("WarnMsg", { fg = "#F18FB0", bg = "#271e28" })
-    hl("InfoMsg", { fg = "#849be0", bg = "#1d1f2d" })
+    hl("Error", { fg = colors.color_14, bg = colors.color_40 })
+    hl("ErrorMsg", { fg = colors.color_41, bg = colors.color_42 })
+    hl("ModeMsg", { fg = colors.color_15, bg = colors.color_43 })
+    hl("MoreMsg", { fg = colors.color_18, bg = colors.color_44 })
+    hl("Question", { fg = colors.color_18, bg = colors.color_44 })
+    hl("WarnMsg", { fg = colors.color_9, bg = colors.color_45 })
+    hl("InfoMsg", { fg = colors.color_16, bg = colors.color_46 })
 
-    hl("ColorColumn", { bg = "#2f3037" })
-    hl("QuickFixLine", { fg = "#bd93f9", bg = colors.color_1, bold = true })
-    hl("StatusLine", { fg = colors.color_1, bg = "#35355e", sp = "#35355e", bold = true })
-    hl("StatusLineNC", { fg = colors.color_1, bg = "#35355e", sp = "#35355e" })
-    hl("VertSplit", { fg = colors.color_1, bg = "#35355E", sp = "#35355e" })
-    hl("VertSplit", { fg = "#35355E" })
-    hl("WildMenu", { fg = "#eed6ee", bg = "#5d5daf" })
+    hl("ColorColumn", { bg = colors.color_47 })
+    hl("QuickFixLine", { fg = colors.color_7, bg = colors.color_1, bold = true })
+    hl("StatusLine", { fg = colors.color_1, bg = colors.color_48, sp = colors.color_48, bold = true })
+    hl("StatusLineNC", { fg = colors.color_1, bg = colors.color_48, sp = colors.color_48 })
+    hl("VertSplit", { fg = colors.color_1, bg = colors.color_48, sp = colors.color_48 })
+    hl("VertSplit", { fg = colors.color_48 })
+    hl("WildMenu", { fg = colors.color_49, bg = colors.color_23 })
 
-    hl("DiffAdd", { fg = "#37d4a7", sp = "#2c9465" })
-    hl("DiffChange", { fg = "#2f77a1", sp = "#2f77a1" })
-    hl("DiffDelete", { fg = "#de286e", sp = "#c9083f" })
-    hl("DiffText", { fg = "#e3d3eb", bg = "#4d254d", sp = "#4d254d" })
+    hl("DiffAdd", { fg = colors.color_50, sp = colors.color_51 })
+    hl("DiffChange", { fg = colors.color_22, sp = colors.color_22 })
+    hl("DiffDelete", { fg = colors.color_13, sp = colors.color_52 })
+    hl("DiffText", { fg = colors.color_53, bg = colors.color_54, sp = colors.color_54 })
 
-    hl("Comment", { fg = "#6272a4" })
-    hl("DocComment", { fg = "#5d5daf" })
-    hl("Conceal", { fg = "#6272a4" })
+    hl("Comment", { fg = colors.color_24 })
+    hl("DocComment", { fg = colors.color_23 })
+    hl("Conceal", { fg = colors.color_24 })
 
-    hl("Special", { fg = "#5d5daf" })
-    hl("SpecialComment", { fg = "#bc6bd0" })
-    hl("SpecialKey", { fg = "#a048ed" })
-    hl("SpecialChar", { fg = "#bc6bd0" })
-    hl("Tag", { fg = "#bc6bd0" })
-    hl("Delimiter", { fg = "#bc6bd0" })
+    hl("Special", { fg = colors.color_23 })
+    hl("SpecialComment", { fg = colors.color_55 })
+    hl("SpecialKey", { fg = colors.color_56 })
+    hl("SpecialChar", { fg = colors.color_55 })
+    hl("Tag", { fg = colors.color_55 })
+    hl("Delimiter", { fg = colors.color_55 })
 
-    hl("Identifier", { fg = "#b488bf" })
-    hl("Function", { fg = "#e086e0" })
+    hl("Identifier", { fg = colors.color_28 })
+    hl("Function", { fg = colors.color_20 })
 
-    hl("Statement", { fg = "#ff7ab2" })
-    hl("Conditional", { fg = "#6876de" })
-    hl("Repeat", { fg = "#6876de" })
-    hl("Label", { fg = "#bc6bd0" })
-    hl("Operator", { fg = "#6272a4", bold = true })
-    hl("Exception", { fg = "#943d84" })
-    hl("Keyword", { fg = "#ff7ab2", bold = true })
+    hl("Statement", { fg = colors.color_18 })
+    hl("Conditional", { fg = colors.color_57 })
+    hl("Repeat", { fg = colors.color_57 })
+    hl("Label", { fg = colors.color_55 })
+    hl("Operator", { fg = colors.color_24, bold = true })
+    hl("Exception", { fg = colors.color_58 })
+    hl("Keyword", { fg = colors.color_18, bold = true })
 
-    hl("Constant", { fg = "#8897F4" })
-    hl("Character", { fg = "#eba4e9" })
-    hl("Float", { fg = "#f72d7c" })
-    hl("Number", { fg = "#de286e" })
-    hl("String", { fg = "#8677d9" })
-    hl("StringDelimiter", { fg = "#bd93f9" })
-    hl("Boolean", { fg = "#6875ed" })
+    hl("Constant", { fg = colors.color_6 })
+    hl("Character", { fg = colors.color_29 })
+    hl("Float", { fg = colors.color_59 })
+    hl("Number", { fg = colors.color_13 })
+    hl("String", { fg = colors.color_19 })
+    hl("StringDelimiter", { fg = colors.color_7 })
+    hl("Boolean", { fg = colors.color_60 })
 
-    hl("PreProc", { fg = "#849be0" })
-    hl("Define", { fg = "#6a5acd" })
-    hl("Include", { fg = "#8677d9" })
-    hl("PreCondit", { fg = "#ab506e" })
-    hl("Macro", { fg = "#6a5acd" })
+    hl("PreProc", { fg = colors.color_16 })
+    hl("Define", { fg = colors.color_26 })
+    hl("Include", { fg = colors.color_19 })
+    hl("PreCondit", { fg = colors.color_61 })
+    hl("Macro", { fg = colors.color_26 })
 
-    hl("Type", { fg = "#8677d9" })
-    hl("Typedef", { fg = "#8677d9" })
-    hl("StorageClass", { fg = "#c081fa" })
-    hl("Structure", { fg = "#ff7ab2" })
+    hl("Type", { fg = colors.color_19 })
+    hl("Typedef", { fg = colors.color_19 })
+    hl("StorageClass", { fg = colors.color_27 })
+    hl("Structure", { fg = colors.color_18 })
 
-    hl("Title", { fg = "#8897F4", bold = true })
-    hl("Todo", { fg = "#302b30", bg = "#eba4e9", sp = "#eba4e9" })
-    hl("Quote", { fg = "#6272a4" })
+    hl("Title", { fg = colors.color_6, bold = true })
+    hl("Todo", { fg = colors.color_62, bg = colors.color_29, sp = colors.color_29 })
+    hl("Quote", { fg = colors.color_24 })
 
-    hl("Directory", { fg = "#ff7ab2" })
-    hl("Debug", { fg = "#bc6bd0" })
-    hl("NonText", { fg = "#2f3037" })
+    hl("Directory", { fg = colors.color_18 })
+    hl("Debug", { fg = colors.color_55 })
+    hl("NonText", { fg = colors.color_47 })
 
-    hl("Underlined", { fg = "#5d5daf", underline = true, sp = "#5d5daf" })
-    hl("SpellBad", { undercurl = true, sp = "#5d5daf" })
-    hl("SpellCap", { undercurl = true, sp = "#5d5daf" })
-    hl("SpellLocal", { undercurl = true, sp = "#5d5daf" })
-    hl("SpellRare", { undercurl = true, sp = "#5d5daf" })
+    hl("Underlined", { fg = colors.color_23, underline = true, sp = colors.color_23 })
+    hl("SpellBad", { undercurl = true, sp = colors.color_23 })
+    hl("SpellCap", { undercurl = true, sp = colors.color_23 })
+    hl("SpellLocal", { undercurl = true, sp = colors.color_23 })
+    hl("SpellRare", { undercurl = true, sp = colors.color_23 })
 
-    hl("Pmenu", { fg = "#8677d9" })
-    hl("PmenuSbar", { fg = "#a883a8" })
-    hl("PmenuSel", { fg = "#bd93f9", bold = true, underline = true, sp = "#bd93f9" })
+    hl("Pmenu", { fg = colors.color_19 })
+    hl("PmenuSbar", { fg = colors.color_63 })
+    hl("PmenuSel", { fg = colors.color_7, bold = true, underline = true, sp = colors.color_7 })
     hl("PmenuThumb", { bg = colors.color_1 })
 
     hl("NormalFloat", {})
-    hl("FloatBorder", { fg = "#ff79c6", blend = 0 })
-    hl("FloatTitle", { fg = "#bd93f9", blend = 0 })
+    hl("FloatBorder", { fg = colors.color_39, blend = 0 })
+    hl("FloatTitle", { fg = colors.color_7, blend = 0 })
 
     hl("@text.title", { link = "Title" })
     hl("@definition.import", { link = "Define" })
@@ -277,7 +323,7 @@ if (vim.fn.has("termguicolors") and vim.opt.termguicolors) or vim.fn.has("gui_ru
     hl("@text.danger", { link = "Error" })
     hl("@error", { link = "Error" })
     hl("@attribute", { link = "Title" })
-    hl("@neorg.markup.verbatim", { bg = "#18171c", fg = "#cba6f7" })
+    hl("@neorg.markup.verbatim", { bg = colors.color_64, fg = colors.color_31 })
     hl("@neorg.markers.prefix", { link = "Directory" })
     hl("@neorg.markers.title", { link = "DocComment" })
     hl("@neorg.headings.2.prefix", { link = "String" })
@@ -444,7 +490,7 @@ if (vim.fn.has("termguicolors") and vim.opt.termguicolors) or vim.fn.has("gui_ru
     hl("HarpoonWindow", { link = "CybuBackground" })
     hl("HarpoonBorder", { link = "FloatermBorder" })
 
-    hl("WhichKeyFloat", { bg = "#111119" })
+    hl("WhichKeyFloat", { bg = colors.color_2 })
 
     hl("WhichKey", { link = "Function" })
     hl("WhichKeyGroup", { link = "Keyword" })
@@ -495,8 +541,8 @@ if (vim.fn.has("termguicolors") and vim.opt.termguicolors) or vim.fn.has("gui_ru
     hl("markdownListMarker", { link = "markdownDelimiter" })
     hl("markdownRule", { link = "markdownDelimiter" })
     hl("markdownUrl", { link = "Underlined" })
-    hl("markdownDelimiter", { fg = "#78c2b3" })
-    hl("markdownCode", { fg = "#dabaff", bg = "#393b44" })
+    hl("markdownDelimiter", { fg = colors.color_65 })
+    hl("markdownCode", { fg = colors.color_66, bg = colors.color_67 })
 
     hl("Terminal", { link = "Normal" })
     hl("TabLine", { link = "StatusLineNC" })
