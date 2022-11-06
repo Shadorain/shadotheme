@@ -5,7 +5,8 @@
 -- Maintainer:   Shadorain <shadorain.elite@gmail.com>
 -- License:      BSD v2 License
 -- Last Updated: Wed 8 Sep 12:57 2021
--- Created by Shadorain and max397574
+-- Created by Shadorain
+-- Ported by max397574
 
 local function hl(...)
     vim.api.nvim_set_hl(0, ...)
@@ -32,7 +33,7 @@ local colors = {
     color_18 = "#ff7ab2",
     color_19 = "#8677d9",
     color_20 = "#e086e0",
-    color_21 = "#ac295",
+    color_21 = "#ac2958",
     color_22 = "#2f77a1",
     color_23 = "#5d5daf",
     color_24 = "#6272a4",
