@@ -126,7 +126,7 @@ if (vim.fn.has("termguicolors") and vim.opt.termguicolors) or vim.fn.has("gui_ru
     }
 
     vim.opt.background = "dark"
-    vim.cmd.hi("clear")
+    vim.cmd [[ highlight clear ]]
     vim.g.colors_name = "shado"
 
     hl("SignColumn", { bg = colors.color_2 })
