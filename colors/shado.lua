@@ -491,6 +491,8 @@ if (vim.fn.has("termguicolors") and vim.opt.termguicolors) or vim.fn.has("gui_ru
     hl("HarpoonWindow", { link = "CybuBackground" })
     hl("HarpoonBorder", { link = "FloatermBorder" })
 
+    hl("MiniIndentscopeSymbol", { fg = colors.color_26 })
+
     hl("WhichKeyFloat", { bg = colors.color_2 })
 
     hl("WhichKey", { link = "Function" })
