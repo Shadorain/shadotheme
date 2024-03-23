@@ -319,6 +319,15 @@ if (vim.fn.has("termguicolors") and vim.opt.termguicolors) or vim.fn.has("gui_ru
     hl("RainbowDelimiterViolet", { fg = colors.color_6 })
     hl("RainbowDelimiterCyan", { fg = colors.color_32 })
 
+    hl("NeoTreeExpander", { fg = colors.color_69 })
+    hl("NeoTreeDirectoryIcon", { fg = colors.color_6 })
+    hl("NeoTreeDirectoryName", { fg = colors.color_7, bold = true })
+    hl("NeoTreeFileIcon", { fg = colors.color_7 })
+    hl("NeoTreeFileName", { fg = colors.color_32 })
+    hl("NeoTreeSymbolicLinkTarget", { fg = colors.color_29 })
+    hl("NeoTreeFileNameOpened", { fg = colors.color_68, bold = true })
+    hl("NeoTreeRootName", { fg = colors.color_18, bold = true })
+
     hl("@text.title", { link = "Title" })
     hl("@definition.import", { link = "Define" })
     hl("@definition.namespace", { link = "Define" })
