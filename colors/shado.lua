@@ -238,8 +238,8 @@ if (vim.fn.has("termguicolors") and vim.opt.termguicolors) or vim.fn.has("gui_ru
     hl("QuickFixLine", { fg = colors.color_7, bg = colors.color_1, bold = true })
     hl("StatusLine", { fg = colors.color_1, bg = colors.color_48, sp = colors.color_48, bold = true })
     hl("StatusLineNC", { fg = colors.color_1, bg = colors.color_48, sp = colors.color_48 })
-    hl("VertSplit", { fg = colors.color_1, bg = colors.color_48, sp = colors.color_48 })
     hl("VertSplit", { fg = colors.color_48 })
+    hl("WinSeparator", { fg = colors.color_69 })
     hl("WildMenu", { fg = colors.color_49, bg = colors.color_23 })
 
     hl("DiffAdd", { fg = colors.color_50, sp = colors.color_51 })
