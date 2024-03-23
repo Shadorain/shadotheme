@@ -80,6 +80,8 @@ local colors = {
     color_65 = "#78c2b3",
     color_66 = "#dabaff",
     color_67 = "#393b44",
+    color_68 = "#edeff0",
+    color_69 = "#505079",
 }
 
 vim.g.terminal_color_0 = colors.color_3
@@ -130,8 +132,8 @@ if (vim.fn.has("termguicolors") and vim.opt.termguicolors) or vim.fn.has("gui_ru
     vim.g.colors_name = "shado"
 
     hl("SignColumn", { bg = colors.color_2 })
-    hl("LineNr", { fg = colors.color_12, bg = colors.color_2 })
-    hl("CursorLineNr", { fg = colors.color_13, bg = colors.color_2 })
+    hl("LineNr", { fg = colors.color_69, bg = colors.color_2 })
+    hl("CursorLineNr", { fg = colors.color_68, bg = colors.color_2 })
 
     hl("DiagnosticUnderlineError", { sp = colors.color_14 })
     hl("DiagnosticUnderlineWarn", { sp = colors.color_9 })
