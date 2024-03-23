@@ -128,7 +128,7 @@ if (vim.fn.has("termguicolors") and vim.opt.termguicolors) or vim.fn.has("gui_ru
     }
 
     vim.opt.background = "dark"
-    vim.cmd [[ highlight clear ]]
+    vim.cmd([[ highlight clear ]])
     vim.g.colors_name = "shado"
 
     hl("SignColumn", { bg = colors.color_2 })
@@ -310,6 +310,14 @@ if (vim.fn.has("termguicolors") and vim.opt.termguicolors) or vim.fn.has("gui_ru
     hl("NormalFloat", {})
     hl("FloatBorder", { fg = colors.color_39, blend = 0 })
     hl("FloatTitle", { fg = colors.color_7, blend = 0 })
+
+    hl("RainbowDelimiterRed", { fg = colors.color_4 })
+    hl("RainbowDelimiterYellow", { fg = colors.color_5 })
+    hl("RainbowDelimiterBlue", { fg = colors.color_7 })
+    hl("RainbowDelimiterOrange", { fg = colors.color_8 })
+    hl("RainbowDelimiterGreen", { fg = colors.color_9 })
+    hl("RainbowDelimiterViolet", { fg = colors.color_6 })
+    hl("RainbowDelimiterCyan", { fg = colors.color_32 })
 
     hl("@text.title", { link = "Title" })
     hl("@definition.import", { link = "Define" })
