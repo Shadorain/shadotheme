@@ -328,6 +328,9 @@ if (vim.fn.has("termguicolors") and vim.opt.termguicolors) or vim.fn.has("gui_ru
     hl("NeoTreeFileNameOpened", { fg = colors.color_68, bold = true })
     hl("NeoTreeRootName", { fg = colors.color_18, bold = true })
 
+    hl("NoiceCmdlinePopupBorder", { fg = colors.color_7, bg = colors.color_25, blend = 0 })
+    hl("NoiceCmdlinePopupTitle", { fg = colors.color_18, bg = colors.color_25, blend = 0 })
+
     hl("@text.title", { link = "Title" })
     hl("@definition.import", { link = "Define" })
     hl("@definition.namespace", { link = "Define" })
