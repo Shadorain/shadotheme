@@ -331,6 +331,10 @@ if (vim.fn.has("termguicolors") and vim.opt.termguicolors) or vim.fn.has("gui_ru
     hl("NoiceCmdlinePopupBorder", { fg = colors.color_7, bg = colors.color_25, blend = 0 })
     hl("NoiceCmdlinePopupTitle", { fg = colors.color_18, bg = colors.color_25, blend = 0 })
 
+    hl("RenamerNormal", { fg = colors.color_32 })
+    hl("RenamerBorder", { fg = colors.color_7, blend = 0 })
+    hl("RenamerTitle", { fg = colors.color_18, bold = true })
+
     hl("@text.title", { link = "Title" })
     hl("@definition.import", { link = "Define" })
     hl("@definition.namespace", { link = "Define" })
