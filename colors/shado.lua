@@ -344,6 +344,8 @@ if (vim.fn.has("termguicolors") and vim.opt.termguicolors) or vim.fn.has("gui_ru
     hl("RenamerBorder", { fg = colors.color_7, blend = 0 })
     hl("RenamerTitle", { fg = colors.color_18, bold = true })
 
+    hl("@lsp.type.typeAlias.rust", { link = "Type" })
+
     hl("@text.title", { link = "Title" })
     hl("@definition.import", { link = "Define" })
     hl("@definition.namespace", { link = "Define" })
