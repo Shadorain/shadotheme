@@ -328,6 +328,15 @@ if (vim.fn.has("termguicolors") and vim.opt.termguicolors) or vim.fn.has("gui_ru
     hl("NeoTreeFileNameOpened", { fg = colors.color_68, bold = true })
     hl("NeoTreeRootName", { fg = colors.color_18, bold = true })
 
+    hl("NeoTreeGitAdded", { link = "DiffAdd" })
+    hl("NeoTreeGitDelete", { link = "DiffDelete" })
+    hl("NeoTreeGitModified", { link = "DiffModified" })
+    hl("NeoTreeGitConflict", { fg = colors.color_5, bold = true })
+    hl("NeoTreeGitUntracked", { fg = colors.color_24 })
+    hl("NeoTreeGitIgnored", { fg = colors.color_33 })
+    hl("NeoTreeGitUnstaged", { link = "Normal" })
+    hl("NeoTreeGitStaged", { link = "Normal" })
+
     hl("NoiceCmdlinePopupBorder", { fg = colors.color_7, bg = colors.color_25, blend = 0 })
     hl("NoiceCmdlinePopupTitle", { fg = colors.color_18, bg = colors.color_25, blend = 0 })
 
