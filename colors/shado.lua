@@ -283,10 +283,10 @@ if (vim.fn.has("termguicolors") and vim.opt.termguicolors) or vim.fn.has("gui_ru
     hl("PreCondit", { fg = colors.color_61 })
     hl("Macro", { fg = colors.color_26 })
 
-    hl("Type", { fg = colors.color_19, italic = true })
-    hl("Typedef", { fg = colors.color_19, italic = true })
-    hl("StorageClass", { fg = colors.color_27, italic = true })
-    hl("Structure", { fg = colors.color_18, italic = true })
+    hl("Type", { fg = colors.color_19 })
+    hl("Typedef", { fg = colors.color_19 })
+    hl("StorageClass", { fg = colors.color_27 })
+    hl("Structure", { fg = colors.color_18 })
 
     hl("Title", { fg = colors.color_6, bold = true })
     hl("Todo", { fg = colors.color_62, bg = colors.color_29, sp = colors.color_29 })
@@ -345,6 +345,7 @@ if (vim.fn.has("termguicolors") and vim.opt.termguicolors) or vim.fn.has("gui_ru
     hl("RenamerTitle", { fg = colors.color_18, bold = true })
 
     hl("@lsp.type.typeAlias.rust", { link = "Type" })
+    hl("@lsp.type.unresolvedReference.rust", { link = "LineNr" })
 
     hl("@text.title", { link = "Title" })
     hl("@definition.import", { link = "Define" })
