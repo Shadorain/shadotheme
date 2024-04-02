@@ -152,6 +152,8 @@ if (vim.fn.has("termguicolors") and vim.opt.termguicolors) or vim.fn.has("gui_ru
     hl("CmpItemAbbrMatchFuzzy", { fg = colors.color_7 })
     hl("CmpItemKind", { fg = colors.color_5 })
     hl("CmpItemMenu", { fg = colors.color_18 })
+    hl("CmpBorder", { fg = colors.color_7 })
+    hl("CmpSelection", { fg = colors.color_18, bold = true })
 
     hl("Beacon", { bg = colors.color_1 })
 
