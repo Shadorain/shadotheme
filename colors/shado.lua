@@ -82,6 +82,7 @@ local colors = {
     color_67 = "#393b44",
     color_68 = "#edeff0",
     color_69 = "#505079",
+    color_70 = "#404061",
 }
 
 vim.g.terminal_color_0 = colors.color_3
@@ -202,6 +203,7 @@ if (vim.fn.has("termguicolors") and vim.opt.termguicolors) or vim.fn.has("gui_ru
     hl("LspCodeLens", { fg = colors.color_23, blend = 10 })
     hl("LspCodeLensSeparator", { fg = colors.color_24, blend = 10 })
     hl("LspSignatureActiveParameter", { fg = colors.color_24, blend = 10 })
+    hl("LspInlayHint", { fg = colors.color_70, blend = 10 })
 
     hl("@field", { fg = colors.color_8 })
     hl("@parameter", { fg = colors.color_30 })
@@ -754,4 +756,5 @@ if (vim.fn.has("termguicolors") and vim.opt.termguicolors) or vim.fn.has("gui_ru
     hl("IndentBlanklineIndent4", { fg = colors.color_1, blend = 10 })
     hl("IndentBlanklineIndent5", { fg = colors.color_1, blend = 10 })
     hl("IndentBlanklineIndent6", { fg = colors.color_1, blend = 10 })
+    hl("IndentBlanklineChar", { fg = colors.color_70, blend = 10 })
 end
