@@ -312,7 +312,8 @@ if (vim.fn.has("termguicolors") and vim.opt.termguicolors) or vim.fn.has("gui_ru
     hl("PmenuThumb", { bg = colors.color_1 })
 
     hl("NormalFloat", {})
-    hl("FloatBorder", { fg = colors.color_39, blend = 0 })
+    -- hl("FloatBorder", { fg = colors.color_39, blend = 0 })
+    hl("FloatBorder", { fg = colors.color_7, blend = 0 })
     hl("FloatTitle", { fg = colors.color_7, blend = 0 })
 
     hl("RainbowDelimiterRed", { fg = colors.color_4 })
