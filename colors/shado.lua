@@ -180,10 +180,40 @@ if (vim.fn.has("termguicolors") and vim.opt.termguicolors) or vim.fn.has("gui_ru
 
   hl("AlphaLogo", { fg = colors.color_26 })
 
+  -- LuaLine --
   hl("LualineDiagnosticError", { fg = colors.color_14, bg = colors.color_2, blend = 10 })
   hl("LualineDiagnosticWarn", { fg = colors.color_9, bg = colors.color_2, blend = 10 })
   hl("LualineDiagnosticInfo", { fg = colors.color_15, bg = colors.color_2, blend = 10 })
   hl("LualineDiagnosticHint", { fg = colors.color_16, bg = colors.color_2, blend = 10 })
+
+  -- BarBar --
+  hl("BufferCurrent", { fg = colors.color_18 })
+  hl("BufferCurrentIcon", { fg = colors.color_18 })
+  hl("BufferCurrentModBtn", { fg = colors.color_13 })
+  hl("BufferCurrentBtn", { fg = colors.color_16 })
+  hl("BufferCurrentSign", { fg = colors.color_48 })
+  hl("BufferCurrentSignRight", { fg = colors.color_48 })
+
+  hl("BufferVisible", { fg = colors.color_6 })
+  hl("BufferVisibleIcon", { fg = colors.color_6 })
+  hl("BufferVisibleModBtn", { fg = colors.color_8 })
+  hl("BufferVisibleBtn", { fg = colors.color_23 })
+  hl("BufferVisibleSign", { fg = colors.color_48 })
+  hl("BufferVisibleSignRight", { fg = colors.color_48 })
+
+  hl("BufferInactive", { fg = colors.color_35 })
+  hl("BufferInactiveIcon", { fg = colors.color_35 })
+  hl("BufferInactiveModBtn", { fg = colors.color_8 })
+  hl("BufferInactiveBtn", { fg = colors.color_23 })
+  hl("BufferInactiveSign", { fg = colors.color_48 })
+  hl("BufferInactiveSignRight", { fg = colors.color_48 })
+
+  hl("BufferAlternate", { fg = colors.color_35 })
+  hl("BufferAlternateIcon", { fg = colors.color_35 })
+  hl("BufferAlternateModBtn", { fg = colors.color_8 })
+  hl("BufferAlternateBtn", { fg = colors.color_23 })
+  hl("BufferAlternateSign", { fg = colors.color_48 })
+  hl("BufferAlternateSignRight", { fg = colors.color_48 })
 
   hl("htmlH1", { fg = colors.color_7 })
   hl("htmlH2", { fg = colors.color_6 })
