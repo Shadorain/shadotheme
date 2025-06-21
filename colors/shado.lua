@@ -188,6 +188,7 @@ if (vim.fn.has("termguicolors") and vim.opt.termguicolors) or vim.fn.has("gui_ru
 
   -- BarBar --
   hl("BufferCurrent", { fg = colors.color_18 })
+  hl("BufferCurrentMod", { fg = colors.color_18 })
   hl("BufferCurrentIcon", { fg = colors.color_18 })
   hl("BufferCurrentModBtn", { fg = colors.color_13 })
   hl("BufferCurrentBtn", { fg = colors.color_16 })
@@ -195,6 +196,7 @@ if (vim.fn.has("termguicolors") and vim.opt.termguicolors) or vim.fn.has("gui_ru
   hl("BufferCurrentSignRight", { fg = colors.color_48 })
 
   hl("BufferVisible", { fg = colors.color_6 })
+  hl("BufferVisibleMod", { fg = colors.color_6 })
   hl("BufferVisibleIcon", { fg = colors.color_6 })
   hl("BufferVisibleModBtn", { fg = colors.color_8 })
   hl("BufferVisibleBtn", { fg = colors.color_23 })
@@ -202,6 +204,7 @@ if (vim.fn.has("termguicolors") and vim.opt.termguicolors) or vim.fn.has("gui_ru
   hl("BufferVisibleSignRight", { fg = colors.color_48 })
 
   hl("BufferInactive", { fg = colors.color_35 })
+  hl("BufferInactiveMod", { fg = colors.color_35 })
   hl("BufferInactiveIcon", { fg = colors.color_35 })
   hl("BufferInactiveModBtn", { fg = colors.color_8 })
   hl("BufferInactiveBtn", { fg = colors.color_23 })
@@ -209,6 +212,7 @@ if (vim.fn.has("termguicolors") and vim.opt.termguicolors) or vim.fn.has("gui_ru
   hl("BufferInactiveSignRight", { fg = colors.color_48 })
 
   hl("BufferAlternate", { fg = colors.color_35 })
+  hl("BufferAlternateMod", { fg = colors.color_35 })
   hl("BufferAlternateIcon", { fg = colors.color_35 })
   hl("BufferAlternateModBtn", { fg = colors.color_8 })
   hl("BufferAlternateBtn", { fg = colors.color_23 })
